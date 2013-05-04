@@ -1,0 +1,137 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://73819af72a8bd426059ff369cd91ebdd:api_token@www.toggl.com/api/v6/workspaces.json?output=json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Status:
+      - '200'
+      X-Powered-By:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.15
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, OPTIONS
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Content-Type, Depth, User-Agent, X-File-Size, X-Requested-With, If-Modified-Since,
+        X-File-Name, Cache-Control, Authorization
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - '"d7e6a1ec61687f9e96ac414c0d849175"'
+      Cache-Control:
+      - must-revalidate, private, max-age=0
+      Set-Cookie:
+      - _toggl3_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWQxMGRhOTM5NTNhZTI0ODY0ZTg3MzRmYTAzZmE3YjlmBjsAVEkiDHVzZXJfaWQGOwBGaQNSqAY%3D--d25c32d0645ab5b29239538ae28ce070d751f27f;
+        path=/; HttpOnly
+      - absess=CretDVGFkVm/MFOMFyEUAg==; expires=Sun, 05-May-13 22:53:13 GMT; path=/
+      X-Request-Id:
+      - 2e098285a2022fcfb7b2950ee530637d
+      X-Runtime:
+      - '0.031295'
+      Date:
+      - Sat, 04 May 2013 22:53:13 GMT
+      X-Rack-Cache:
+      - miss
+      Server:
+      - nginx/1.2.2 + Phusion Passenger 3.0.15 (mod_rails/mod_rack)
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":335096,"name":"GB Workspace","profile_name":"Pro","updated_at":"2013-02-26T10:07:20+00:00","current_user_is_admin":true}],"related_data_updated_at":"2013-05-02T00:00:00Z"}'
+    http_version: 
+  recorded_at: Sat, 04 May 2013 22:53:13 GMT
+- request:
+    method: get
+    uri: https://73819af72a8bd426059ff369cd91ebdd:api_token@www.toggl.com/api/v6/workspaces/335096/users.json?output=json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Status:
+      - '200'
+      X-Powered-By:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.15
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, OPTIONS
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Content-Type, Depth, User-Agent, X-File-Size, X-Requested-With, If-Modified-Since,
+        X-File-Name, Cache-Control, Authorization
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - '"664cc73c8355f50b3395667383f6ea74"'
+      Cache-Control:
+      - must-revalidate, private, max-age=0
+      Set-Cookie:
+      - _toggl3_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWNjM2ZkYzRkZGM0NjJmYjE0OTJmZDBjOTQ3OWU5N2I4BjsAVEkiDHVzZXJfaWQGOwBGaQNSqAY%3D--29fedcf69d2b624ee1eb345e4201dbd04329cbf4;
+        path=/; HttpOnly
+      - absess=CrBF61GFkVl6+0YBFyx2Ag==; expires=Sun, 05-May-13 22:53:13 GMT; path=/
+      X-Request-Id:
+      - 29925a6052c67e999e4c91b865e38fa2
+      X-Runtime:
+      - '0.037261'
+      Date:
+      - Sat, 04 May 2013 22:53:13 GMT
+      X-Rack-Cache:
+      - miss
+      Server:
+      - nginx/1.2.2 + Phusion Passenger 3.0.15 (mod_rails/mod_rack)
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":481964,"language":"en_US","date_format":"%m/%d/%Y","fullname":"Gabriel","beginning_of_week":1,"new_time_entries_start_automatically":false,"time_entry_retention_days":9,"timeofday_format":"%I:%M
+        %p","api_token":"1810e654c98ab560fc96dab876f2a0f7","email":"gabriel@groupbuddies.com","default_workspace_id":335096,"jquery_date_format":"m/d/Y","jquery_timeofday_format":"h:i
+        A","store_start_and_stop_time":true,"updated_at":"2013-04-22T11:32:21+01:00"},{"id":436305,"language":"en_US","date_format":"%m/%d/%Y","fullname":"Joao","beginning_of_week":1,"new_time_entries_start_automatically":false,"time_entry_retention_days":9,"timeofday_format":"%I:%M
+        %p","api_token":"84f777d07a32c2643e8bccc0fe7b72c7","email":"joao@groupbuddies.com","default_workspace_id":335096,"jquery_date_format":"m/d/Y","jquery_timeofday_format":"h:i
+        A","store_start_and_stop_time":false,"updated_at":"2013-05-02T10:06:34+01:00"},{"id":436307,"language":"en_US","date_format":"%d-%m-%Y","fullname":"Mpalhas","beginning_of_week":0,"new_time_entries_start_automatically":false,"time_entry_retention_days":9,"timeofday_format":"%I:%M
+        %p","api_token":"54ef10aac423ea658bc7afb3241bce6d","email":"mpalhas@groupbuddies.com","default_workspace_id":335096,"jquery_date_format":"d-m-Y","jquery_timeofday_format":"h:i
+        A","store_start_and_stop_time":true,"updated_at":"2013-04-29T20:59:15+01:00"},{"id":436306,"language":"en_US","date_format":"%d-%m-%Y","fullname":"Zamith","beginning_of_week":1,"new_time_entries_start_automatically":false,"time_entry_retention_days":9,"timeofday_format":"%I:%M
+        %p","api_token":"73819af72a8bd426059ff369cd91ebdd","email":"zamith@groupbuddies.com","default_workspace_id":335096,"jquery_date_format":"d-m-Y","jquery_timeofday_format":"h:i
+        A","store_start_and_stop_time":false,"updated_at":"2013-05-04T22:42:03+01:00"},{"id":436304,"language":"en_US","date_format":"%Y-%m-%d","fullname":"Fernando","beginning_of_week":1,"new_time_entries_start_automatically":false,"time_entry_retention_days":9,"timeofday_format":"%H:%M","api_token":"87656d413005368bfd5ffe7c56edf494","email":"fernando@groupbuddies.com","default_workspace_id":335096,"jquery_date_format":"Y-m-d","jquery_timeofday_format":"H:i","store_start_and_stop_time":false,"updated_at":"2013-04-30T18:37:30+01:00"},{"id":432191,"language":"en_US","date_format":"%m/%d/%Y","fullname":"Roberto","beginning_of_week":1,"new_time_entries_start_automatically":false,"time_entry_retention_days":9,"timeofday_format":"%I:%M
+        %p","api_token":"76460d12f1ea3877fde8510fcceb157f","email":"roberto@groupbuddies.com","default_workspace_id":335096,"jquery_date_format":"m/d/Y","jquery_timeofday_format":"h:i
+        A","store_start_and_stop_time":false,"updated_at":"2013-04-29T01:48:21+01:00"}],"related_data_updated_at":"2013-05-02T00:00:00Z"}'
+    http_version: 
+  recorded_at: Sat, 04 May 2013 22:53:13 GMT
+recorded_with: VCR 2.4.0
