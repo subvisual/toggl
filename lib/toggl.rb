@@ -3,8 +3,7 @@ require "httparty"
 require "chronic_duration"
 require "multi_json"
 require "pp"
-
-YAML::ENGINE.yamler = 'syck'
+require 'yaml'
 
 class Toggl
   include HTTParty
@@ -54,6 +53,10 @@ class Toggl
 
   def workspaces
     get 'workspaces'
+  end
+
+  def users_for_workspace(workspace_id)
+    get "workspaces/#{workspace_id}/users"
   end
 
   def time_entries(params={})

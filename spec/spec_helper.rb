@@ -1,10 +1,12 @@
 require 'rubygems'
-require 'test/unit'
-require 'shoulda'
+require 'rspec'
 
 $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'toggl'
 
-class Test::Unit::TestCase
+file_name = "configs.yml"
+if File.exist?(file_name)
+  TOGGL_TOKEN = YAML.load_file(file_name)["toggl_token"]
 end
+
