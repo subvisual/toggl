@@ -24,6 +24,14 @@ describe Toggl do
   end
 
   def toggl_instance
-    @_toggl_instance ||= Toggl.new TOGGL_TOKEN
+    @_toggl_instance ||= Toggl.new token
+  end
+
+  def token
+    token = if defined? TOGGL_TOKEN
+      TOGGL_TOKEN
+    else
+      "no one cares"
+    end
   end
 end

@@ -30,9 +30,13 @@ NOTE: the command line tool is currently broken and needs to be updated for V6 o
 
  toggl_interface.update_time_entry(entry)
 
+  workspace_id = toggl_interface.workspaces.first["id"]
+
+ toggl_interface.users_for_workspace(workspace_id)
+
 similar methods exist for clients, projects, and tasks, check the source while we work on better documentation
 
 
 == Copyright
 
-Copyright (c) 2010 Koen Van der Auwera. See LICENSE for details.
+Copyright (c) 2013 Group Buddies. See LICENSE for details.
