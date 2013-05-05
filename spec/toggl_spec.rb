@@ -3,7 +3,7 @@ require 'spec_helper'
 describe Toggl do
   context "#workspace_users" do
     it "gets the users of a given workspace" do
-      VCR.use_cassette('user_for_workspace') do
+      VCR.use_cassette('user_for_workspace', match_requests_on: [:path]) do
         workspace_id = toggl_instance.workspaces.first["id"]
 
         users = toggl_instance.users_for_workspace workspace_id
@@ -13,7 +13,7 @@ describe Toggl do
     end
 
     it "calls the correct API URI" do
-      VCR.use_cassette('user_for_workspace') do
+      VCR.use_cassette('user_for_workspace', match_requests_on: [:path]) do
         workspace_id = toggl_instance.workspaces.first["id"]
 
         toggl_instance.should_receive(:get).with("workspaces/#{workspace_id}/users")
