@@ -1,4 +1,4 @@
-= toggl
+= Toggl {<img src="https://secure.travis-ci.org/groupbuddies/toggl.png" />}[http://travis-ci.org/groupbuddies/toggl]
 
 Toggl API wrapper in a Ruby gem, this is compatible with v6 of the API
 
